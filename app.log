@@ -1,0 +1,153 @@
+2024-08-28T12:58:56.885+07:00  INFO 15672 --- [main] c.e.m.MqttserverApplicationTests         : Starting MqttserverApplicationTests using Java 21.0.2 with PID 15672 (started by suhan in C:\data\project kerja\soundbox\mqtt server\springboot\mqttserver)
+2024-08-28T12:58:56.887+07:00  INFO 15672 --- [main] c.e.m.MqttserverApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-08-28T12:58:58.230+07:00  INFO 15672 --- [main] c.e.m.service.MqttBrokerService          : Starting MQTT Broker...
+2024-08-28T12:58:58.232+07:00  INFO 15672 --- [main] io.moquette.broker.Server                : Configuring message interceptors...
+2024-08-28T12:58:58.233+07:00  INFO 15672 --- [main] i.m.interception.BrokerInterceptor       : Initializing broker interceptor. InterceptorIds=[ConnectionInterceptor, PublishInterceptor]
+2024-08-28T12:58:58.235+07:00  INFO 15672 --- [main] i.m.interception.BrokerInterceptor       : Adding MQTT message interceptor. InterceptorId=ConnectionInterceptor, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage]
+2024-08-28T12:58:58.235+07:00  INFO 15672 --- [main] i.m.interception.BrokerInterceptor       : Adding MQTT message interceptor. InterceptorId=PublishInterceptor, handledMessageTypes=[class io.moquette.interception.messages.InterceptPublishMessage]
+2024-08-28T12:58:58.235+07:00  INFO 15672 --- [main] io.moquette.broker.Server                : Using default SSL context creator
+2024-08-28T12:58:58.238+07:00  INFO 15672 --- [main] io.moquette.broker.Server                : An io.moquette.broker.security.AcceptAllAuthenticator authenticator instance will be used
+2024-08-28T12:58:58.239+07:00  INFO 15672 --- [main] io.moquette.broker.Server                : Authorizator policy io.moquette.broker.security.PermitAllAuthorizatorPolicy instance will be used
+2024-08-28T12:58:58.241+07:00  INFO 15672 --- [main] i.m.b.s.CTrieSubscriptionDirectory       : Initializing CTrie
+2024-08-28T12:58:58.243+07:00  INFO 15672 --- [main] i.m.b.s.CTrieSubscriptionDirectory       : Initializing subscriptions store...
+2024-08-28T12:58:58.284+07:00  INFO 15672 --- [main] io.moquette.broker.NewNettyAcceptor      : Netty is using NIO
+2024-08-28T12:58:58.499+07:00  INFO 15672 --- [main] io.moquette.broker.NewNettyAcceptor      : Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2024-08-28T12:58:58.505+07:00  INFO 15672 --- [main] io.moquette.broker.NewNettyAcceptor      : Property websocket_port has been setted to disabled. Websocket MQTT will be disabled
+2024-08-28T12:58:58.505+07:00  INFO 15672 --- [main] io.moquette.broker.Server                : Moquette integration has been started successfully in 273 ms
+2024-08-28T12:58:58.506+07:00  INFO 15672 --- [main] c.e.m.service.MqttBrokerService          : MQTT Broker started successfully.
+2024-08-28T12:58:59.401+07:00  INFO 15672 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-28T12:58:59.480+07:00  INFO 15672 --- [main] c.e.m.MqttserverApplicationTests         : Started MqttserverApplicationTests in 2.949 seconds (process running for 4.1)
+2024-08-28T12:59:00.554+07:00  INFO 15672 --- [SpringApplicationShutdownHook] c.e.m.service.MqttBrokerService          : Stopping MQTT Broker...
+2024-08-28T12:59:00.554+07:00  INFO 15672 --- [SpringApplicationShutdownHook] io.moquette.broker.Server                : Unbinding integration from the configured ports
+2024-08-28T12:59:00.560+07:00  INFO 15672 --- [SpringApplicationShutdownHook] io.moquette.broker.NewNettyAcceptor      : Waiting for worker and boss event loop groups to terminate...
+2024-08-28T12:59:02.635+07:00  INFO 15672 --- [SpringApplicationShutdownHook] io.moquette.broker.NewNettyAcceptor      : Metrics messages[read=0, write=0] bytes[read=0, write=0]
+2024-08-28T12:59:02.635+07:00  INFO 15672 --- [SpringApplicationShutdownHook] i.m.interception.BrokerInterceptor       : Shutting down interceptor thread pool...
+2024-08-28T12:59:02.636+07:00  INFO 15672 --- [SpringApplicationShutdownHook] i.m.interception.BrokerInterceptor       : Waiting for thread pool tasks to terminate...
+2024-08-28T12:59:02.636+07:00  INFO 15672 --- [SpringApplicationShutdownHook] i.m.interception.BrokerInterceptor       : interceptors stopped
+2024-08-28T12:59:02.636+07:00  INFO 15672 --- [SpringApplicationShutdownHook] io.moquette.broker.Server                : Moquette integration has been stopped.
+2024-08-28T12:59:02.636+07:00  INFO 15672 --- [SpringApplicationShutdownHook] c.e.m.service.MqttBrokerService          : MQTT Broker stopped successfully.
+2024-08-28T13:04:48.276+07:00  INFO 14392 --- [main] c.e.mqttserver.MqttserverApplication     : Starting MqttserverApplication using Java 21.0.2 with PID 14392 (C:\data\project kerja\soundbox\mqtt server\springboot\mqttserver\target\classes started by suhan in C:\data\project kerja\soundbox\mqtt server\springboot\mqttserver)
+2024-08-28T13:04:48.281+07:00  INFO 14392 --- [main] c.e.mqttserver.MqttserverApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-08-28T13:04:49.933+07:00  INFO 14392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-28T13:04:49.945+07:00  INFO 14392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-28T13:04:49.946+07:00  INFO 14392 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-08-28T13:04:50.015+07:00  INFO 14392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-28T13:04:50.015+07:00  INFO 14392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1640 ms
+2024-08-28T13:04:50.339+07:00  INFO 14392 --- [main] c.e.m.service.MqttBrokerService          : Starting MQTT Broker...
+2024-08-28T13:04:50.342+07:00  INFO 14392 --- [main] io.moquette.broker.Server                : Configuring message interceptors...
+2024-08-28T13:04:50.343+07:00  INFO 14392 --- [main] i.m.interception.BrokerInterceptor       : Initializing broker interceptor. InterceptorIds=[ConnectionInterceptor, PublishInterceptor]
+2024-08-28T13:04:50.346+07:00  INFO 14392 --- [main] i.m.interception.BrokerInterceptor       : Adding MQTT message interceptor. InterceptorId=ConnectionInterceptor, handledMessageTypes=[class io.moquette.interception.messages.InterceptConnectMessage, class io.moquette.interception.messages.InterceptDisconnectMessage]
+2024-08-28T13:04:50.346+07:00  INFO 14392 --- [main] i.m.interception.BrokerInterceptor       : Adding MQTT message interceptor. InterceptorId=PublishInterceptor, handledMessageTypes=[class io.moquette.interception.messages.InterceptPublishMessage]
+2024-08-28T13:04:50.346+07:00  INFO 14392 --- [main] io.moquette.broker.Server                : Using default SSL context creator
+2024-08-28T13:04:50.347+07:00  INFO 14392 --- [main] io.moquette.broker.Server                : An io.moquette.broker.security.AcceptAllAuthenticator authenticator instance will be used
+2024-08-28T13:04:50.348+07:00  INFO 14392 --- [main] io.moquette.broker.Server                : Authorizator policy io.moquette.broker.security.PermitAllAuthorizatorPolicy instance will be used
+2024-08-28T13:04:50.351+07:00  INFO 14392 --- [main] i.m.b.s.CTrieSubscriptionDirectory       : Initializing CTrie
+2024-08-28T13:04:50.353+07:00  INFO 14392 --- [main] i.m.b.s.CTrieSubscriptionDirectory       : Initializing subscriptions store...
+2024-08-28T13:04:50.381+07:00  INFO 14392 --- [main] io.moquette.broker.NewNettyAcceptor      : Netty is using NIO
+2024-08-28T13:04:50.550+07:00  INFO 14392 --- [main] io.moquette.broker.NewNettyAcceptor      : Server bound to host=0.0.0.0, port=1883, protocol=TCP MQTT
+2024-08-28T13:04:50.555+07:00  INFO 14392 --- [main] io.moquette.broker.NewNettyAcceptor      : Property websocket_port has been setted to disabled. Websocket MQTT will be disabled
+2024-08-28T13:04:50.555+07:00  INFO 14392 --- [main] io.moquette.broker.Server                : Moquette integration has been started successfully in 214 ms
+2024-08-28T13:04:50.555+07:00  INFO 14392 --- [main] c.e.m.service.MqttBrokerService          : MQTT Broker started successfully.
+2024-08-28T13:04:51.084+07:00  INFO 14392 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-08-28T13:04:51.178+07:00  INFO 14392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-28T13:04:51.191+07:00  INFO 14392 --- [main] c.e.mqttserver.MqttserverApplication     : Started MqttserverApplication in 3.5 seconds (process running for 3.983)
+2024-08-28T13:05:33.578+07:00  INFO 14392 --- [nioEventLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:05:33.586+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: ����ԀιԀ��Ԁ�Ԁ��Ԁ
+2024-08-28T13:05:33.586+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 1200
+2024-08-28T13:05:33.586+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:05:33.587+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:05:33.587+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:05:33.587+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: suhanda
+2024-08-28T13:09:45.134+07:00  INFO 14392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-28T13:09:45.134+07:00  INFO 14392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-28T13:09:45.135+07:00  INFO 14392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-28T13:09:45.597+07:00  INFO 14392 --- [nioEventLoopGroup-3-2] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:09:45.598+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: paho1392151767363600
+2024-08-28T13:09:45.599+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 60
+2024-08-28T13:09:45.599+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:09:45.599+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:09:45.599+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:09:45.599+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: null
+2024-08-28T13:09:45.605+07:00  INFO 14392 --- [nioEventLoopGroup-3-2] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <paho1392151767363600> packetID <1>
+2024-08-28T13:09:45.607+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic topic/down/00001504QR75A000134: {"context":{"sc":"700"}}
+2024-08-28T13:09:46.268+07:00  INFO 14392 --- [nioEventLoopGroup-3-2] i.m.broker.metrics.MQTTMessageLogger     : C->B DISCONNECT <paho1392151767363600>
+2024-08-28T13:09:46.270+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: paho1392151767363600
+2024-08-28T13:09:46.270+07:00  INFO 14392 --- [nioEventLoopGroup-3-2] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:09:46.270+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: null
+2024-08-28T13:09:46.270+07:00  INFO 14392 --- [nioEventLoopGroup-3-2] io.moquette.broker.MQTTConnection        : Notifying connection lost event
+2024-08-28T13:10:51.786+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:10:51.787+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: 860395060120691
+2024-08-28T13:10:51.787+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 1200
+2024-08-28T13:10:51.788+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:10:51.788+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:10:51.788+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:10:51.788+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: suhanda
+2024-08-28T13:10:52.624+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <860395060120691> packetID <1>
+2024-08-28T13:10:52.625+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic /sys/a1t29S5DMq0/mgx509test/thing/deviceinfo/update: {"id":"0","version":"1.0","params":[{"attrKey":"SYS_LP_SDK_VERSION","attrValue":"3.0.1","domain":"SYSTEM"},{"attrKey":"SYS_SDK_LANGUAGE","attrValue":"C","domain":"SYSTEM"}],"method":"thing.deviceinfo.update"}
+2024-08-28T13:10:52.949+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <860395060120691> packetID <2>
+2024-08-28T13:10:52.950+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic /ota/device/inform/a1t29S5DMq0/mgx509test: {"id":"1","params":{"version":"app-1.0.0-20190813.1000"}}
+2024-08-28T13:10:53.106+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B SUBSCRIBE <860395060120691> to topics [MqttTopicSubscription[topicFilter=topic/down/00001504QR75A000134, option=SubscriptionOption[qos=AT_LEAST_ONCE, noLocal=false, retainAsPublished=false, retainHandling=SEND_AT_SUBSCRIBE]]]
+2024-08-28T13:10:53.109+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C<-B SUBACK <860395060120691> packetID <3>, grantedQoses [1]
+2024-08-28T13:14:16.534+07:00  INFO 14392 --- [nioEventLoopGroup-3-4] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:14:16.537+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: paho1392422745512600
+2024-08-28T13:14:16.537+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 60
+2024-08-28T13:14:16.538+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:14:16.538+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:14:16.538+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:14:16.538+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: null
+2024-08-28T13:14:16.542+07:00  INFO 14392 --- [nioEventLoopGroup-3-4] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <paho1392422745512600> packetID <1>
+2024-08-28T13:14:16.543+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic topic/down/00001504QR75A000134: {"context":{"sc":"80"}}
+2024-08-28T13:14:16.925+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B PUBACK <860395060120691> packetID <1>
+2024-08-28T13:14:17.219+07:00  INFO 14392 --- [nioEventLoopGroup-3-4] i.m.broker.metrics.MQTTMessageLogger     : C->B DISCONNECT <paho1392422745512600>
+2024-08-28T13:14:17.219+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: paho1392422745512600
+2024-08-28T13:14:17.219+07:00  INFO 14392 --- [nioEventLoopGroup-3-4] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:14:17.219+07:00  INFO 14392 --- [nioEventLoopGroup-3-4] io.moquette.broker.MQTTConnection        : Notifying connection lost event
+2024-08-28T13:14:17.219+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: null
+2024-08-28T13:14:39.009+07:00  INFO 14392 --- [nioEventLoopGroup-3-5] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: paho1392445223793600
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 60
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:14:39.011+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: null
+2024-08-28T13:14:39.012+07:00  INFO 14392 --- [nioEventLoopGroup-3-5] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <paho1392445223793600> packetID <1>
+2024-08-28T13:14:39.012+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic topic/down/00001504QR75A000134: {"context":{"sc":"76876"}}
+2024-08-28T13:14:39.693+07:00  INFO 14392 --- [nioEventLoopGroup-3-5] i.m.broker.metrics.MQTTMessageLogger     : C->B DISCONNECT <paho1392445223793600>
+2024-08-28T13:14:39.694+07:00  INFO 14392 --- [nioEventLoopGroup-3-5] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:14:39.694+07:00  INFO 14392 --- [nioEventLoopGroup-3-5] io.moquette.broker.MQTTConnection        : Notifying connection lost event
+2024-08-28T13:14:39.694+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: paho1392445223793600
+2024-08-28T13:14:39.694+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: null
+2024-08-28T13:14:40.186+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B PUBACK <860395060120691> packetID <2>
+2024-08-28T13:14:58.492+07:00  INFO 14392 --- [nioEventLoopGroup-3-6] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: paho1392464706730200
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 60
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:14:58.493+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: null
+2024-08-28T13:14:58.494+07:00  INFO 14392 --- [nioEventLoopGroup-3-6] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <paho1392464706730200> packetID <1>
+2024-08-28T13:14:58.494+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic topic/down/00001504QR75A000134: {"context":{"sc":"777"}}
+2024-08-28T13:14:59.175+07:00  INFO 14392 --- [nioEventLoopGroup-3-6] i.m.broker.metrics.MQTTMessageLogger     : C->B DISCONNECT <paho1392464706730200>
+2024-08-28T13:14:59.176+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: paho1392464706730200
+2024-08-28T13:14:59.176+07:00  INFO 14392 --- [nioEventLoopGroup-3-6] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:14:59.176+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: null
+2024-08-28T13:14:59.176+07:00  INFO 14392 --- [nioEventLoopGroup-3-6] io.moquette.broker.MQTTConnection        : Notifying connection lost event
+2024-08-28T13:14:59.448+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B PUBACK <860395060120691> packetID <3>
+2024-08-28T13:15:36.141+07:00  INFO 14392 --- [nioEventLoopGroup-3-7] i.m.broker.metrics.MQTTMessageLogger     : C->B CONNECT <null>
+2024-08-28T13:15:36.142+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client connected: paho1392502352704800
+2024-08-28T13:15:36.143+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client keepalive: 60
+2024-08-28T13:15:36.143+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol name: MQTT
+2024-08-28T13:15:36.143+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client protocol version: 4
+2024-08-28T13:15:36.143+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client qos: AT_MOST_ONCE
+2024-08-28T13:15:36.143+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client username: null
+2024-08-28T13:15:36.144+07:00  INFO 14392 --- [nioEventLoopGroup-3-7] i.m.broker.metrics.MQTTMessageLogger     : C<-B PUBACK <paho1392502352704800> packetID <1>
+2024-08-28T13:15:36.144+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.PublishInterceptor     : Received message on topic topic/down/00001504QR75A000134: {"context":{"sc":"666"}}
+2024-08-28T13:15:36.814+07:00  INFO 14392 --- [nioEventLoopGroup-3-7] i.m.broker.metrics.MQTTMessageLogger     : C->B DISCONNECT <paho1392502352704800>
+2024-08-28T13:15:36.815+07:00  INFO 14392 --- [nioEventLoopGroup-3-7] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:15:36.815+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: paho1392502352704800
+2024-08-28T13:15:36.815+07:00  INFO 14392 --- [nioEventLoopGroup-3-7] io.moquette.broker.MQTTConnection        : Notifying connection lost event
+2024-08-28T13:15:36.815+07:00  INFO 14392 --- [pool-2-thread-1] c.e.m.interceptor.ConnectionInterceptor  : Client disconnected: null
+2024-08-28T13:15:36.928+07:00  INFO 14392 --- [nioEventLoopGroup-3-3] i.m.broker.metrics.MQTTMessageLogger     : C->B PUBACK <860395060120691> packetID <4>
+2024-08-28T13:39:34.917+07:00  INFO 14392 --- [nioEventLoopGroup-3-1] i.m.broker.MoquetteIdleTimeoutHandler    : Firing channel inactive event. MqttClientId = ����ԀιԀ��Ԁ�Ԁ��Ԁ.
+2024-08-28T13:39:34.918+07:00  INFO 14392 --- [nioEventLoopGroup-3-1] i.m.broker.metrics.MQTTMessageLogger     : Channel Inactive
+2024-08-28T13:39:34.918+07:00  INFO 14392 --- [nioEventLoopGroup-3-1] io.moquette.broker.MQTTConnection        : Notifying connection lost event
